@@ -30,10 +30,11 @@
         {
             this.dataGridView_dokumentyMagazynowe = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button_dodaj = new System.Windows.Forms.Button();
-            this.button_usun = new System.Windows.Forms.Button();
-            this.button_edytuj = new System.Windows.Forms.Button();
             this.button_zamknij = new System.Windows.Forms.Button();
+            this.button_edytuj = new System.Windows.Forms.Button();
+            this.button_usun = new System.Windows.Forms.Button();
+            this.button_dodaj = new System.Windows.Forms.Button();
+            this.button_repozytoriumInfo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_dokumentyMagazynowe)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +55,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button_repozytoriumInfo);
             this.panel1.Controls.Add(this.button_zamknij);
             this.panel1.Controls.Add(this.button_edytuj);
             this.panel1.Controls.Add(this.button_usun);
@@ -63,36 +65,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1132, 100);
             this.panel1.TabIndex = 1;
-            // 
-            // button_dodaj
-            // 
-            this.button_dodaj.Location = new System.Drawing.Point(40, 37);
-            this.button_dodaj.Name = "button_dodaj";
-            this.button_dodaj.Size = new System.Drawing.Size(75, 23);
-            this.button_dodaj.TabIndex = 0;
-            this.button_dodaj.Text = "Dodaj";
-            this.button_dodaj.UseVisualStyleBackColor = true;
-            this.button_dodaj.Click += new System.EventHandler(this.Button_dodaj_Click);
-            // 
-            // button_usun
-            // 
-            this.button_usun.Location = new System.Drawing.Point(202, 37);
-            this.button_usun.Name = "button_usun";
-            this.button_usun.Size = new System.Drawing.Size(75, 23);
-            this.button_usun.TabIndex = 1;
-            this.button_usun.Text = "Usuń";
-            this.button_usun.UseVisualStyleBackColor = true;
-            this.button_usun.Click += new System.EventHandler(this.Button_usun_Click);
-            // 
-            // button_edytuj
-            // 
-            this.button_edytuj.Location = new System.Drawing.Point(121, 37);
-            this.button_edytuj.Name = "button_edytuj";
-            this.button_edytuj.Size = new System.Drawing.Size(75, 23);
-            this.button_edytuj.TabIndex = 2;
-            this.button_edytuj.Text = "Edytuj";
-            this.button_edytuj.UseVisualStyleBackColor = true;
-            this.button_edytuj.Click += new System.EventHandler(this.Button_edytuj_Click);
             // 
             // button_zamknij
             // 
@@ -104,6 +76,46 @@
             this.button_zamknij.Text = "Zamknij";
             this.button_zamknij.UseVisualStyleBackColor = true;
             this.button_zamknij.Click += new System.EventHandler(this.Button_zamknij_Click);
+            // 
+            // button_edytuj
+            // 
+            this.button_edytuj.Location = new System.Drawing.Point(121, 37);
+            this.button_edytuj.Name = "button_edytuj";
+            this.button_edytuj.Size = new System.Drawing.Size(75, 23);
+            this.button_edytuj.TabIndex = 2;
+            this.button_edytuj.Text = "Edytuj";
+            this.button_edytuj.UseVisualStyleBackColor = true;
+            this.button_edytuj.Click += new System.EventHandler(this.Button_edytuj_Click);
+            // 
+            // button_usun
+            // 
+            this.button_usun.Location = new System.Drawing.Point(202, 37);
+            this.button_usun.Name = "button_usun";
+            this.button_usun.Size = new System.Drawing.Size(75, 23);
+            this.button_usun.TabIndex = 1;
+            this.button_usun.Text = "Usuń";
+            this.button_usun.UseVisualStyleBackColor = true;
+            this.button_usun.Click += new System.EventHandler(this.Button_usun_Click);
+            // 
+            // button_dodaj
+            // 
+            this.button_dodaj.Location = new System.Drawing.Point(40, 37);
+            this.button_dodaj.Name = "button_dodaj";
+            this.button_dodaj.Size = new System.Drawing.Size(75, 23);
+            this.button_dodaj.TabIndex = 0;
+            this.button_dodaj.Text = "Dodaj";
+            this.button_dodaj.UseVisualStyleBackColor = true;
+            this.button_dodaj.Click += new System.EventHandler(this.Button_dodaj_Click);
+            // 
+            // button_repozytoriumInfo
+            // 
+            this.button_repozytoriumInfo.Location = new System.Drawing.Point(338, 37);
+            this.button_repozytoriumInfo.Name = "button_repozytoriumInfo";
+            this.button_repozytoriumInfo.Size = new System.Drawing.Size(156, 23);
+            this.button_repozytoriumInfo.TabIndex = 4;
+            this.button_repozytoriumInfo.Text = "Repozytorium info";
+            this.button_repozytoriumInfo.UseVisualStyleBackColor = true;
+            this.button_repozytoriumInfo.Click += new System.EventHandler(this.Button_repozytoriumInfo_Click);
             // 
             // Form_dokumentyMagazynowe
             // 
@@ -129,6 +141,7 @@
         private System.Windows.Forms.Button button_usun;
         private System.Windows.Forms.Button button_dodaj;
         private System.Windows.Forms.Button button_zamknij;
+        private System.Windows.Forms.Button button_repozytoriumInfo;
     }
 }
 

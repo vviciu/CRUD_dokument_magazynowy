@@ -103,5 +103,11 @@ namespace DokumentMagazynowy
                 }
             }
         }
+
+        private void Button_repozytoriumInfo_Click(object sender, EventArgs e)
+        {
+            var repozytoriumInformacja = new Form_repozytoriumProjektowe();
+            repozytoriumInformacja.ShowDialog();
+        }
     }
 }
